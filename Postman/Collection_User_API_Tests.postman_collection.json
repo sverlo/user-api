@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "158e9534-6a3f-48dc-9c97-f766f8f26e6e",
+		"name": "Collection_User_API_Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4c371e62-a04b-4dcb-954b-b3692608345d",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/api/user",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d290d12c-3d27-4891-ab7d-15091de7e273",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"testname\",\n\t\"Surname\": \"testsurname\",\n\t\"Age\": 20,\n\t\"Email\": \"test@t.est\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/user",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Add new user"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c4f91ed6-3350-481d-9c26-9d5fc8afa9ab",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"f484da0e-b84c-4b79-823f-731b306170d8\",\n    \"name\": \"testname\",\n    \"surname\": \"testsurname\",\n    \"age\": 20,\n    \"email\": \"new-email-test@t.est\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/user/f484da0e-b84c-4b79-823f-731b306170d8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"user",
+						"f484da0e-b84c-4b79-823f-731b306170d8"
+					]
+				},
+				"description": "Edit users info by id"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1d4276e7-29de-40a9-a8c7-d53b9d717597",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/api/user/8875036e-b6e5-4899-9bf4-bbb918cf432f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"user",
+						"8875036e-b6e5-4899-9bf4-bbb918cf432f"
+					]
+				},
+				"description": "Delete a user by id"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,258 @@
+{
+	"id": "52e57abe-3022-48fc-b5c4-4adf88b12413",
+	"name": "Collection_User_API_Tests",
+	"allTests": [],
+	"timestamp": "2019-06-21T17:40:54.134Z",
+	"collection_id": "158e9534-6a3f-48dc-9c97-f766f8f26e6e",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "c4f2a0bd-312e-446e-b4d9-8710aab540fc",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "158e9534-6a3f-48dc-9c97-f766f8f26e6e",
+		"name": "Collection_User_API_Tests",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"3e5dd62f-ecad-4c9a-a3fe-83553a5a7752",
+			"3b012cf8-2b9c-4b7f-ab10-4767c7eb83ce",
+			"4bd379f2-1427-4b8b-bb46-5a6146b5b055",
+			"b080571a-f05c-45cd-a686-33e10b638dd0"
+		],
+		"folders_order": [],
+		"owner": "7906941",
+		"favorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "GET_request",
+			"id": "3e5dd62f-ecad-4c9a-a3fe-83553a5a7752",
+			"url": "https://localhost:44333/api/user",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Successful GET request": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"128"
+			],
+			"allTests": [
+				{
+					"Successful GET request": true
+				}
+			],
+			"time": "128",
+			"totalRequestTime": "128",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST_request",
+			"id": "3b012cf8-2b9c-4b7f-ab10-4767c7eb83ce",
+			"url": "https://localhost:44333/api/user",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"69"
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			],
+			"time": "69",
+			"totalRequestTime": "69",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT_request",
+			"id": "4bd379f2-1427-4b8b-bb46-5a6146b5b055",
+			"url": "https://localhost:44333/api/user/8e95f309-5913-44a2-9c52-f83d9d175d68",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"55"
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true
+				}
+			],
+			"time": "55",
+			"totalRequestTime": "55",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE_request",
+			"id": "b080571a-f05c-45cd-a686-33e10b638dd0",
+			"url": "https://localhost:44333/api/user/8e95f309-5913-44a2-9c52-f83d9d175d68",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"54"
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true
+				}
+			],
+			"time": "54",
+			"totalRequestTime": "54",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 0,
+	"totalTime": 306,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "GET_request",
+			"id": "3e5dd62f-ecad-4c9a-a3fe-83553a5a7752",
+			"url": "https://localhost:44333/api/user",
+			"time": "2019-06-21T17:40:54.134Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST_request",
+			"id": "3b012cf8-2b9c-4b7f-ab10-4767c7eb83ce",
+			"url": "https://localhost:44333/api/user",
+			"time": "2019-06-21T17:40:54.134Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT_request",
+			"id": "4bd379f2-1427-4b8b-bb46-5a6146b5b055",
+			"url": "https://localhost:44333/api/user/8e95f309-5913-44a2-9c52-f83d9d175d68",
+			"time": "2019-06-21T17:40:54.134Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE_request",
+			"id": "b080571a-f05c-45cd-a686-33e10b638dd0",
+			"url": "https://localhost:44333/api/user/8e95f309-5913-44a2-9c52-f83d9d175d68",
+			"time": "2019-06-21T17:40:54.134Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
